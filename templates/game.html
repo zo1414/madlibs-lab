@@ -1,0 +1,36 @@
+
+{% extends 'base.html' %}
+    {% block title %}Madlibs{% endblock %}
+ {% block content %}
+    <h1> Madlibs Game</h1>
+
+    <form action='/madlib'>
+        Name
+        <input type="text" name="person"> <br>
+
+        Pick a color:
+        <select name="color">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="orange">Orange</option>
+            <option value="green">Green</option>
+            <option value="pink">Pink</option>
+        </select><br>
+
+        Enter a noun:
+        <input type="text" name="noun"> <br>
+
+<!--         Enter an adjective:
+        <input type="text" name="adj"> <br> -->
+        Choose your adjective(s): <br>
+        <input type="checkbox" name="adj" value="good">Good<br>
+        <input type="checkbox" name="adj" value="fluffy">Fluffy<br>
+        <input type="checkbox" name="adj" value="lazy">Lazy<br>
+        <input type="checkbox" name="adj" value="crazy">Crazy<br>
+
+
+        <input type="submit">
+    </form>
+
+
+ {% endblock %}

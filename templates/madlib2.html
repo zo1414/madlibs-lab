@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+    {% block title %}Madlibs{% endblock %}
+ {% block content %}
+    <h1> Madlibs Result</h1>
+
+    Pizza was invented by chef {{person}}. To make a pizza, you need to take a lump of {{noun}}, and make a thin, round, {% for adj in adjectives %}, {{ adj }} {% endfor %}
+ pie. Then you cover it with {{color}} sauce and cheese.
+
+ {% endblock %}

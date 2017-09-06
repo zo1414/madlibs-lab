@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+    {% block title %}Madlibs{% endblock %}
+ {% block content %}
+    <h1> Madlibs Results</h1>
+
+    Today I went to the zoo with {{ person }}! The first thing we saw was a {{ color }} {{ noun }} dancing. The zookeeper told us that was normal.  I had a {% for adj in adjectives %} {{ adj }}, {% endfor %} time.
+
+ {% endblock %}

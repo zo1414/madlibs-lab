@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+    {% block title %}Madlibs{% endblock %}
+ {% block content %}
+    <h1> Madlibs Result</h1>
+
+    There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab.
+When {{ person }} went to pick it up, it burst into flames in a totally
+{% if length > 1 %}
+<!-- {{ adjectives[0] }} and {{ adjectives[1] }} -->
+ {% for adj in adjectives[:-1] %}
+{{ adj }}, {% endfor %}
+ and {{adjectives[-1]}}
+ way.
+ {% endif %}
+
+ {% endblock %}
